@@ -1,3 +1,9 @@
+<?php 
+include("config/config.php");
+$query = mysqli_query($connect, "SELECT * FROM topik");
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -85,19 +91,19 @@
           </div>
 
           <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
-
-            <div class="icon-box">
+          <?php while($data=mysqli_fetch_array($query)){ ?>
+              <div class="icon-box">
               <div class="icon"><i class="bx bx-fingerprint"></i></div>
-              <h4 class="title"><a href="">JUVIL</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              <h4 class="title"><a href=""><?php echo $data['judul'];?></a></h4>
+              <p class="description"><?php echo $data['deskripsi'];?></p>
             </div>
-
-            <div class="icon-box">
+<!----
+<div class="icon-box">
               <div class="icon"><i class="bx bx-gift"></i></div>
               <h4 class="title"><a href="">SEMV</a></h4>
               <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-            </div>
-
+            </div>--->
+          <?php }?>
           </div>
         </div>
 
@@ -133,7 +139,8 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+<!-- REQUIRED SCRIPTS -->
+<?php include("partial/js.php"); ?>
 </body>
 
 </html>
