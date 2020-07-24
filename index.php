@@ -39,14 +39,13 @@
         <h1 class="text-light">
           <a href="index.php">
             <span><a href="index.php">
-              <img src="assets/img/logo.png" alt="" class="img-fluid" height="65" width="250">
+              <img src="assets/img/logo.png" alt="" class="img-fluid" height="50" width="200">
             </span></a></h1></a></div>
 
             
-      <div class="logo float-right">
+     <!------ <div class="logo float-right">
         <h1 class="text-light">
-         <span>Digital Solution</span></a></h1></div>
-
+         <span>Digital Solution</span></a></h1></div>---->
       <!-- .nav-menu -->
 
     </div>
