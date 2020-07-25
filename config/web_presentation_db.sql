@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 24, 2020 at 03:29 PM
+-- Generation Time: Jul 25, 2020 at 09:04 AM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.8
 
@@ -42,6 +42,27 @@ INSERT INTO `topik` (`id`, `judul`, `deskripsi`, `image`) VALUES
 (1, 'JAVIL', 'Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident', 'javil.jpg'),
 (2, 'SEMV', 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque', 'semv.jpg');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `topik_detail`
+--
+
+CREATE TABLE `topik_detail` (
+  `id` int(3) NOT NULL,
+  `idtopik` int(3) NOT NULL,
+  `judul` varchar(10) NOT NULL,
+  `image` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `topik_detail`
+--
+
+INSERT INTO `topik_detail` (`id`, `idtopik`, `judul`, `image`) VALUES
+(1, 1, 'solusi1_1', 'sol11.jpg'),
+(2, 2, 'solusi2_1', 'sol21.jpg');
+
 --
 -- Indexes for dumped tables
 --
@@ -53,6 +74,13 @@ ALTER TABLE `topik`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `topik_detail`
+--
+ALTER TABLE `topik_detail`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `topikid` (`idtopik`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -61,6 +89,22 @@ ALTER TABLE `topik`
 --
 ALTER TABLE `topik`
   MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `topik_detail`
+--
+ALTER TABLE `topik_detail`
+  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `topik_detail`
+--
+ALTER TABLE `topik_detail`
+  ADD CONSTRAINT `topik_detail_ibfk_1` FOREIGN KEY (`idtopik`) REFERENCES `topik` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
