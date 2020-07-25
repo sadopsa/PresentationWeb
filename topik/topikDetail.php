@@ -39,15 +39,15 @@ $data = mysqli_fetch_array($query);
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top header-transparent">
+  <header id="header" class="header-transparent">
     <div class="container">
 
       <div class="logo float-left">
-        <h1 class="text-light">
+        
           <a href="../index.php">
-            <span><a href="../index.php">
+            <a href="../index.php">
               <img src="../assets/img/logo.png" alt="" class="img-fluid" height="50" width="200">
-            </span></a></h1></a></div>
+            </a></div>
 
             
      <!------ <div class="logo float-right">
@@ -57,7 +57,7 @@ $data = mysqli_fetch_array($query);
 
     </div>
   </header><!-- End Header -->
-  <main id="main">
+  <main id="mains">
 
     <!-- ======= Services Section ======= -->
     <!-- End Services Section -->
