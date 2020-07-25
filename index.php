@@ -94,7 +94,7 @@ $query = mysqli_query($connect, "SELECT * FROM topik");
           <?php while($data=mysqli_fetch_array($query)){ ?>
               <div class="icon-box">
               <div class="icon"><i class="bx bx-fingerprint"></i></div>
-              <h4 class="title"><a href=""><?php echo $data['judul'];?></a></h4>
+              <h4 class="title"><a href="topik/topikdetail.php?id=<?php echo $data['id']; ?>"><?php echo $data['judul'];?></a></h4>
               <p class="description"><?php echo $data['deskripsi'];?></p>
             </div>
 <!----
