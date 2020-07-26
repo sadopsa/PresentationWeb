@@ -12,8 +12,10 @@
  background-color: #57ca93;
 }
 .tepi-sikit{
-  margin-left: 50px;
-  padding-top: 10px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  
 }
 body {
   font-family: "Open Sans", sans-serif;
@@ -740,9 +742,17 @@ section {
   box-shadow: 0 5px 25px 0 rgba(8, 180, 114, 0.651);
   background: #fff;
 }
+.why-us .containers {
+  box-shadow: 0 5px 25px 0 rgba(8, 180, 114, 0.651);
+  background: #fff;
+  margin: 2%;
+  padding: 5%;
+  margin-top:0;
+}
 
-.why-us .icon-box + .icon-box {
+.why-us .icon-box{
   margin-top: 50px;
+  
 }
 
 .why-us .icon-box .icon {
@@ -759,7 +769,7 @@ section {
 
 .why-us .icon-box .icon i {
   color: #0c5c3b;
-  font-size: 32px;
+  font-size: 30px;
 }
 
 .why-us .icon-box:hover .icon {
@@ -777,7 +787,22 @@ section {
   font-size: 18px;
   text-transform: uppercase;
 }
-
+.why-us .icon-box .title1 {
+  margin-left: 95px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding-top: 30px;
+  text-align: left;  
+}
+.why-us .icon-box .title {
+  margin-left: 95px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
 .why-us .icon-box .title a {
   color: #28c04e;
   transition: 0.3s;
