@@ -1,7 +1,7 @@
 <?php
 include("../config/config.php");
 $id = $_GET['id'];
-$alltopik = mysqli_query($connect,"SELECT * FROM topik");
+$allTopik = mysqli_query($connect,"SELECT * FROM topik");
 $query = mysqli_query($connect,"SELECT * FROM topik where id = $id");
 $topik = mysqli_query($connect, "SELECT * FROM topik_detail where idtopik = $id");
 $data = mysqli_fetch_array($query);
@@ -46,8 +46,6 @@ $kolom = 3;
     <div class="container">
 
       <div class="logo float-left">
-        
-          <a href="../index.php">
             <a href="../index.php">
               <img src="../assets/img/logo.png" alt="" class="img-fluid" height="50" width="200">
             </a></div>
@@ -56,13 +54,15 @@ $kolom = 3;
      <!------ <div class="logo float-right">
         <h1 class="text-light">
          <span>Digital Solution</span></a></h1></div>---->
-      <!-- .nav-menu -->
-      <nav class="nav-menu float-right d-none d-lg-block  ">
+      
+      
+      <!---- .nav-menu --->
+      <nav class="nav-menu float-right d-none d-lg-block ">
         <ul>       
           <li class="active ijo-warna"><a href="../index.php">Home</a></li>
-          <?php while($getTopik=mysqli_fetch_array($alltopik)){
-          echo '<li class="active ijo-warna"><a href="../topik/topikDetail.php?id='.$getTopik['id'].'">
-          '.$getTopik['judul'].'</a></li>';
+          <?php while($topics=mysqli_fetch_array($allTopik)){
+          echo '<li class="active ijo-warna"><a href="../topik/topikDetail.php?id='.$topics['id'].'">
+          '.$topics['judul'].'</a></li>';
           }?>
         </ul>
       </nav><!-- .nav-menu -->
