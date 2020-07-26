@@ -4,7 +4,8 @@ $id = $_GET['id'];
 $query = mysqli_query($connect,"SELECT * FROM topik where id = $id");
 $topik = mysqli_query($connect, "SELECT * FROM topik_detail where idtopik = $id");
 $data = mysqli_fetch_array($query);
-
+$i = 1;
+$kolom = 3;
 ?>
 
 
@@ -62,27 +63,34 @@ $data = mysqli_fetch_array($query);
 
     <!-- ======= Services Section ======= -->
     <!-- End Services Section -->
-    <div class="ijo">
-    <h1 class="tepi-sikit"><?php echo $data['judul']; ?></h1>
-    </div>
+  
     <!-- ======= Why Us Section ======= -->
-    <section class="why-us section-bg-2" data-aos="fade-up" date-aos-delay="200">  
-    <div class="container">
-
+    <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">  
+    <div class="containers" >
+    <h1 class="tepi-sikit" style="text-align:center; margin:0; padding:0;"><?php echo $data['judul']; ?></h1>
         <div class="row">
         
           <div class="col-lg-6 video-box">
-            <img src="../assets/img/animasi/<?php echo $data['image']; ?>" class="img-fluid" alt="">
+            <img src="../assets/img/animasi/<?php echo $data['image']; ?>" class="img-fluid" alt="" >
             <a href="https://www.youtube.com/watch?v=tWB6nOsI1a8" class="venobox" data-vbtype="video" data-autoplay="true"></a>
           </div>
 
-          <div class="col-lg-2 d-flex align-content-start flex-wrap p-5">
-          <?php while($dataTopik = mysqli_fetch_array($topik)){?>
-              <div class="icon-box">
-              <div class="icon"><i class="bx bx-fingerprint"></i></div>
-              <h4 class="title"><a href="#"><?php echo $dataTopik['judul'];?></a></h4>
-              <p class="description"></p>
-            </div>
+          <div class="col-lg-6">
+          <?php
+          while($dataTopik = mysqli_fetch_array($topik)){
+            if(($i) % $kolom == 1){
+              echo '<div class="row">';
+            }
+            echo '<div class="col-md-4 icon-box">
+            <div class="icon"><a href="solusiDetail.php?id='.$dataTopik['id'].'"><i class="bx bx-fingerprint"></i></a></div>
+              <h4 class="title1"><a href="solusiDetail.php?id='.$dataTopik['id'].'">'.$dataTopik['judul'].'</a></h4>
+            </div>';
+            if(($i) % $kolom == 0){
+              echo '</div>';
+            }
+            $i++;
+          ?>
+      
           
 <!----
 <div class="icon-box">
