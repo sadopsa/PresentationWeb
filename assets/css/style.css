@@ -11,11 +11,18 @@ mod/**
 .ijo{
  background-color: #57ca93;
 }
+.ijo-warna{
+ color:#57ca93;
+ font-weight: bold;
+}
 .tepi-sikit{
   text-align: center;
   margin: 0;
   padding: 0;
 
+}
+.kasih-jarak{
+  padding: 1%;
 }
 body {
   font-family: "Open Sans", sans-serif;
@@ -164,7 +171,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   visibility: hidden;
   padding: 10px 0;
   background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  box-shadow: 0px 0px 30px #57ca9249;
   transition: ease all 0.3s;
 }
 
@@ -184,11 +191,11 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   font-size: 14px;
   font-weight: 500;
   text-transform: none;
-  color: #1c3745;
+  color: #1c452f;
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-  color: #68A4C4;
+  color: #68c48b;
 }
 
 .nav-menu .drop-down > a:after {
@@ -213,7 +220,6 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .nav-menu .drop-down .drop-down > a:after {
-  content: "\eaa0";
   font-family: IcoFont;
   position: absolute;
   right: 15px;
@@ -241,7 +247,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   left: -260px;
   width: 260px;
   padding-top: 18px;
-  background: #1e4356;
+  background: #1e5637;
   transition: 0.4s;
 }
 
@@ -254,18 +260,17 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 .mobile-nav a {
   display: block;
   position: relative;
-  color: #ddecf5;
+  color: #ddf5ec;
   padding: 10px 20px;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #a2cce3;
+  color: #a2e3c2;
   text-decoration: none;
 }
 
 .mobile-nav .drop-down > a:after {
-  content: "\ea99";
   font-family: IcoFont;
   padding-left: 10px;
   position: absolute;
@@ -273,7 +278,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .mobile-nav .active.drop-down > a:after {
-  content: "\eaa0";
+  content: "\ea9d";
 }
 
 .mobile-nav .drop-down > a {
@@ -305,7 +310,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .mobile-nav-toggle i {
-  color: #fff;
+  color: #57ca93;
 }
 
 .mobile-nav-overly {
@@ -315,7 +320,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   top: 0;
   left: 0;
   position: fixed;
-  background: rgba(30, 67, 86, 0.9);
+  background: rgba(30, 86, 55, 0.9);
   overflow: hidden;
   display: none;
 }
@@ -746,7 +751,7 @@ section {
   box-shadow: 0 5px 25px 0 rgba(8, 180, 114, 0.651);
   background: #fff;
   margin: 2%;
-  padding: 5%;
+  padding: 2%;
   margin-top:0;
 }
 
@@ -803,6 +808,7 @@ section {
   font-size: 18px;
   text-transform: uppercase;
 }
+
 .why-us .icon-box .title a {
   color: #28c04e;
   transition: 0.3s;
