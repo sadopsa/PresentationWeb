@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 26, 2020 at 10:27 AM
--- Server version: 10.4.13-MariaDB
--- PHP Version: 7.4.8
+-- Waktu pembuatan: 26 Jul 2020 pada 14.55
+-- Versi server: 10.4.11-MariaDB
+-- Versi PHP: 7.4.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -24,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `solusi`
+-- Struktur dari tabel `solusi`
 --
 
 CREATE TABLE `solusi` (
@@ -40,11 +41,11 @@ CREATE TABLE `solusi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `solusi`
+-- Dumping data untuk tabel `solusi`
 --
 
 INSERT INTO `solusi` (`id`, `idtopikdetail`, `judul`, `sebelum`, `sesudah`, `keybenefit`, `materi`, `process`, `video`) VALUES
-(1, 1, 'solusi1_1', '', '', '', '', '', ''),
+(1, 1, 'solusi1_1', 'ss11.jpg', 'ses11.jpg', 'ks11.jpg', 'ms11.jpg', 'ps11.jpg', 'video.mp4'),
 (2, 2, 'solusi2_1', '', '', '', '', '', ''),
 (3, 3, 'solusi1_2', '', '', '', '', '', ''),
 (4, 4, 'solusi1_3', '', '', '', '', '', ''),
@@ -61,7 +62,7 @@ INSERT INTO `solusi` (`id`, `idtopikdetail`, `judul`, `sebelum`, `sesudah`, `key
 -- --------------------------------------------------------
 
 --
--- Table structure for table `topik`
+-- Struktur dari tabel `topik`
 --
 
 CREATE TABLE `topik` (
@@ -72,7 +73,7 @@ CREATE TABLE `topik` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `topik`
+-- Dumping data untuk tabel `topik`
 --
 
 INSERT INTO `topik` (`id`, `judul`, `deskripsi`, `image`) VALUES
@@ -82,7 +83,7 @@ INSERT INTO `topik` (`id`, `judul`, `deskripsi`, `image`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `topik_detail`
+-- Struktur dari tabel `topik_detail`
 --
 
 CREATE TABLE `topik_detail` (
@@ -93,7 +94,7 @@ CREATE TABLE `topik_detail` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `topik_detail`
+-- Dumping data untuk tabel `topik_detail`
 --
 
 INSERT INTO `topik_detail` (`id`, `idtopik`, `judul`, `image`) VALUES
@@ -116,7 +117,7 @@ INSERT INTO `topik_detail` (`id`, `idtopik`, `judul`, `image`) VALUES
 --
 
 --
--- Indexes for table `solusi`
+-- Indeks untuk tabel `solusi`
 --
 ALTER TABLE `solusi`
   ADD PRIMARY KEY (`id`),
@@ -124,13 +125,13 @@ ALTER TABLE `solusi`
   ADD KEY `judul` (`judul`);
 
 --
--- Indexes for table `topik`
+-- Indeks untuk tabel `topik`
 --
 ALTER TABLE `topik`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `topik_detail`
+-- Indeks untuk tabel `topik_detail`
 --
 ALTER TABLE `topik_detail`
   ADD PRIMARY KEY (`id`),
@@ -138,40 +139,40 @@ ALTER TABLE `topik_detail`
   ADD KEY `topikid` (`idtopik`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `solusi`
+-- AUTO_INCREMENT untuk tabel `solusi`
 --
 ALTER TABLE `solusi`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- AUTO_INCREMENT for table `topik`
+-- AUTO_INCREMENT untuk tabel `topik`
 --
 ALTER TABLE `topik`
   MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `topik_detail`
+-- AUTO_INCREMENT untuk tabel `topik_detail`
 --
 ALTER TABLE `topik_detail`
   MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- Constraints for dumped tables
+-- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
 --
 
 --
--- Constraints for table `solusi`
+-- Ketidakleluasaan untuk tabel `solusi`
 --
 ALTER TABLE `solusi`
   ADD CONSTRAINT `solusi_ibfk_1` FOREIGN KEY (`idtopikdetail`) REFERENCES `topik_detail` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `solusi_ibfk_2` FOREIGN KEY (`judul`) REFERENCES `topik_detail` (`judul`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `topik_detail`
+-- Ketidakleluasaan untuk tabel `topik_detail`
 --
 ALTER TABLE `topik_detail`
   ADD CONSTRAINT `topik_detail_ibfk_1` FOREIGN KEY (`idtopik`) REFERENCES `topik` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;

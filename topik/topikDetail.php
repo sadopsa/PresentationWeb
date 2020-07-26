@@ -1,6 +1,7 @@
-<?php 
+<?php
 include("../config/config.php");
 $id = $_GET['id'];
+$alltopik = mysqli_query($connect,"SELECT * FROM topik");
 $query = mysqli_query($connect,"SELECT * FROM topik where id = $id");
 $topik = mysqli_query($connect, "SELECT * FROM topik_detail where idtopik = $id");
 $data = mysqli_fetch_array($query);
@@ -17,7 +18,7 @@ $kolom = 3;
     <title>Document</title>
 
     <meta content="" name="descriptison">
-  <meta content="" name="keywords">
+    <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link href="../assets/img/favicon.png" rel="icon">
@@ -56,7 +57,15 @@ $kolom = 3;
         <h1 class="text-light">
          <span>Digital Solution</span></a></h1></div>---->
       <!-- .nav-menu -->
-
+      <nav class="nav-menu float-right d-none d-lg-block  ">
+        <ul>       
+          <li class="active ijo-warna"><a href="../index.php">Home</a></li>
+          <?php while($getTopik=mysqli_fetch_array($alltopik)){
+          echo '<li class="active ijo-warna"><a href="../topik/topikDetail.php?id='.$getTopik['id'].'">
+          '.$getTopik['judul'].'</a></li>';
+          }?>
+        </ul>
+      </nav><!-- .nav-menu -->
     </div>
   </header><!-- End Header -->
   <main id="mains">
@@ -70,12 +79,12 @@ $kolom = 3;
     <h1 class="tepi-sikit" style="text-align:center; margin:0; padding:0;"><?php echo $data['judul']; ?></h1>
         <div class="row">
         
-          <div class="col-lg-6 video-box">
+          <div class="col-lg-6 video-box d-flex flex-column justify-content-center p-5">
             <img src="../assets/img/animasi/<?php echo $data['image']; ?>" class="img-fluid" alt="" >
             <a href="https://www.youtube.com/watch?v=tWB6nOsI1a8" class="venobox" data-vbtype="video" data-autoplay="true"></a>
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
           <?php
           while($dataTopik = mysqli_fetch_array($topik)){
             if(($i) % $kolom == 1){
