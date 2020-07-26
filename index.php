@@ -140,7 +140,7 @@ $query = mysqli_query($connect, "SELECT * FROM topik");
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 <!-- REQUIRED SCRIPTS -->
-<?php include("partial/js.php"); ?>
+
 </body>
 
 </html>
