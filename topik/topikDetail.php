@@ -72,12 +72,12 @@ $kolom = 3;
     <h1 class="tepi-sikit" style="text-align:center; margin:0; padding:0;"><?php echo $data['judul']; ?></h1>
         <div class="row">
         
-          <div class="col-lg-6 video-box d-flex flex-column justify-content-center p-5">
+          <div class="col-lg-4 video-box d-flex flex-column justify-content-center p-5">
             <img src="../assets/img/animasi/<?php echo $data['image']; ?>" class="img-fluid" alt="" >
             <a href="https://www.youtube.com/watch?v=tWB6nOsI1a8" class="venobox" data-vbtype="video" data-autoplay="true"></a>
           </div>
 
-          <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+          <div class="col-lg-8 d-flex flex-column justify-content-center p-5">
           <?php
           while($dataTopik = mysqli_fetch_array($topik)){
             if(($i) % $kolom == 1){
