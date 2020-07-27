@@ -11,6 +11,10 @@ mod/**
 .ijo{
  background-color: #57ca93;
 }
+.cocok{
+  height: auto;
+  width: 100%;
+}
 .ijo-warna{
  color:#57ca93;
  font-weight: bold;
@@ -27,6 +31,8 @@ mod/**
 body {
   font-family: "Open Sans", sans-serif;
   color: #444;
+  width: 100%;
+  height: auto;
 }
 
 a {
