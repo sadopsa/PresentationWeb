@@ -11,6 +11,12 @@ mod/**
 .ijo{
  background-color: #57ca93;
 }
+.bg-img{
+background-image:url('/assets/img/hero-bg.jpg');
+background-repeat:no-repeat;
+background-size:contain;
+background-position:center;
+}
 .cocok{
   height: auto;
   width: 100%;
@@ -795,7 +801,7 @@ section {
   margin-left: 95px;
   font-weight: 700;
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 30px;
   text-transform: uppercase;
 }
 .why-us .icon-box .title1 {
