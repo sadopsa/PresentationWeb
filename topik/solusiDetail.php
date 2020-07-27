@@ -1,7 +1,11 @@
 <?php 
 include("../config/config.php");
 $id = $_GET['id'];
+$ids= $_GET['ids'];
 $solusi = mysqli_query($connect,"SELECT * FROM solusi where id = $id");
+$topikSolusi = mysqli_query($connect,"SELECT * FROM topik_detail where idtopik = $ids");
+$topik = mysqli_query($connect,"SELECT * FROM  topik where id = $ids");
+$dataTopik = mysqli_fetch_array($topik);
 $data = mysqli_fetch_array($solusi);
 $i = 1;
 $kolom = 3;
@@ -60,7 +64,8 @@ $kolom = 3;
         <h1 class="text-light">
          <span>Digital Solution</span></a></h1></div>---->
       <!-- .nav-menu -->
-
+      <?php include("../partial/dropdown.php");?>
+      <!---.nav menu--->
     </div>
   </header><!-- End Header -->
   <main id="mains">
@@ -103,9 +108,9 @@ $kolom = 3;
 
 
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6" class="venobox play-btn mb-4">
               <video width="100%" height="auto" loop="true" autoplay="autoplay" controls>
-                <source src="../assets/video/<?php echo $data['video'];?>" type="video/mp4" />
+                <source src="../assets/video/<?php echo $data['video'];?>" type="video/mp4">
               </video>
             </div>
             <div class="col-lg-6" align="right">
