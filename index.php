@@ -38,42 +38,11 @@ $query = mysqli_query($connect, "SELECT * FROM topik");
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top header-transparent">
-    <div class="container">
-
-      <div class="logo float-left">
-        <h1 class="text-light">
-          <a href="index.php">
-            <span><a href="index.php">
-              <img src="assets/img/logo.png" alt="" class="img-fluid" height="50" width="200">
-            </span></a></h1></a></div>
-
-            
-     <!------ <div class="logo float-right">
-        <h1 class="text-light">
-         <span>Digital Solution</span></a></h1></div>---->
-      <!-- .nav-menu -->
-
-    </div>
-  </header><!-- End Header -->
+  <?php include("partial/header.php");?>
+  <!--- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex justify-cntent-center align-items-center">
-    <div id="heroCarousel" class="container carousel carousel-fade" data-ride="carousel">
-
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Bla bla</span></h2>
-          <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-     
-        </div>
-      </div>
-
-     
-
-    </div>
-  </section><!-- End Hero -->
+ <!-- End Hero -->
 
   <main id="main">
 
@@ -91,11 +60,18 @@ $query = mysqli_query($connect, "SELECT * FROM topik");
           </div>
 
           <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
-          <?php while($data=mysqli_fetch_array($query)){ ?>
+         
               <div class="icon-box">
               <div class="icon"><i class="bx bx-fingerprint"></i></div>
-              <h4 class="title"><a href="topik/topikdetail.php?id=<?php echo $data['id']; ?>"><?php echo $data['judul'];?></a></h4>
-              <p class="description"><?php echo $data['deskripsi'];?></p>
+              <h4 class="title"><a href="jabil.php">JABIL</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti
+                 quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            </div>
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-fingerprint"></i></div>
+              <h4 class="title"><a href="#">SEMV</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti 
+                quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
             </div>
 <!----
 <div class="icon-box">
@@ -103,7 +79,7 @@ $query = mysqli_query($connect, "SELECT * FROM topik");
               <h4 class="title"><a href="">SEMV</a></h4>
               <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
             </div>--->
-          <?php }?>
+         
           </div>
         </div>
 
@@ -118,10 +94,8 @@ $query = mysqli_query($connect, "SELECT * FROM topik");
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
-
-
-  </footer><!-- End Footer -->
+ <?php include("partial/footer.php");?>
+  <!-- End Footer -->
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
