@@ -57,15 +57,8 @@ $kolom = 3;
       
       
       <!---- .nav-menu --->
-      <nav class="nav-menu float-right d-none d-lg-block ">
-        <ul>       
-          <li class="active ijo-warna"><a href="../index.php">Home</a></li>
-          <?php while($topics=mysqli_fetch_array($allTopik)){
-          echo '<li class="active ijo-warna"><a href="../topik/topikDetail.php?id='.$topics['id'].'">
-          '.$topics['judul'].'</a></li>';
-          }?>
-        </ul>
-      </nav><!-- .nav-menu -->
+     <?php include("../partial/nav.php"); ?>
+     <!-- .nav-menu -->
     </div>
   </header><!-- End Header -->
   <main id="mains">
@@ -91,8 +84,8 @@ $kolom = 3;
               echo '<div class="row">';
             }
             echo '<div class="col-md-4 icon-box">
-            <div class="icon"><a href="solusiDetail.php?id='.$dataTopik['id'].'"><i class="bx bx-fingerprint"></i></a></div>
-              <h4 class="title1"><a href="solusiDetail.php?id='.$dataTopik['id'].'">'.$dataTopik['judul'].'</a></h4>
+            <div class="icon"><a href="solusiDetail.php?id='.$dataTopik['id'].'&ids='.$data['id'].'"><i class="bx bx-fingerprint"></i></a></div>
+              <h4 class="title1"><a href="solusiDetail.php?id='.$dataTopik['id'].'&ids='.$data['id'].'">'.$dataTopik['judul'].'</a></h4>
             </div>';
             if(($i) % $kolom == 0){
               echo '</div>';
