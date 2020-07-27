@@ -58,7 +58,7 @@
             <div class="portfolio-item">
               <img src="assets/img/jabiloption/journey.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h3><a href="assets/img/jabiloption/journey.png" data-gall="portfolioGallery" class="venobox" title="Option1">GO</a></h3>
+                <h3><a href="assets/img/animasi/semv.gif" data-gall="portfolioGallery" class="venobox" title="Option1">GO</a></h3>
               </div>
             </div>
           </div></a>
@@ -68,7 +68,7 @@
             <div class="portfolio-item">
               <img src="assets/img/jabiloption/team.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h3><a href="assets/img/jabiloption/team.png" data-gall="portfolioGallery" class="venobox" title="Option2">GO</a></h3>
+                <h3><a href="assets/img/animasi/javil.gif" data-gall="portfolioGallery" class="venobox" title="Option2">GO</a></h3>
                 </div>
             </div>
           </div></a>
@@ -78,17 +78,17 @@
             <div class="portfolio-item">
               <img src="assets/img/jabiloption/col-jour.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h3><a href="assets/img/jabiloption/col-jour.png" data-gall="portfolioGallery" class="venobox" title="Option3">GO</a></h3>
+                <h3><a href="assets/img/video/vs11.mp4" data-gall="portfolioGallery" class="venobox" title="Option3">GO</a></h3>
             </div>
             </div>
           </div></a>
 
-          <a href="#">
+          <a href="topik/topikDetail.php?id=1">
           <div class="col-lg-3 col-md-6 filter-web">
             <div class="portfolio-item">
               <img src="assets/img/jabiloption/col-sol.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h3><a href="assets/img/jabiloption/col-sol.png.jpg" data-gall="portfolioGallery" class="venobox" title="Option4">GO</a></h3>
+                <h3><a href="topik/topikDetail.php?id=2" data-gall="portfolioGallery" class="venobox" title="Option4"></a></h3>
                 </div>
             </div>
           </div></a>
