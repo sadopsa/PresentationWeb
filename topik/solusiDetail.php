@@ -10,8 +10,6 @@ $data = mysqli_fetch_array($solusi);
 $i = 1;
 $kolom = 3;
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 

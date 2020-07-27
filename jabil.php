@@ -14,7 +14,9 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -39,65 +41,73 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <?php include("partial/header.php"); ?>
+  <?php include("partial/header.php");?>
   <!-- End Header -->
 
-  <main id="main">
-  <section class="portfolio">
-      <div class="container"> 
+  <main id="main" style="background-color:#57ca93">
+    <section class="portfolio">
+      <div class="container">
 
         <div class="row">
           <div class="col-lg-12">
-         
+
           </div>
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
-        <a href="#">
-        <div class="col-lg-3 col-md-6 filter-app">
-            <div class="portfolio-item">
-              <img src="assets/img/jabiloption/journey.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h3><a href="assets/img/animasi/semv.gif" data-gall="portfolioGallery" class="venobox" title="JOURNEY">GO</a></h3>
+          <a href="#">
+            <div class="col-lg-3 col-md-6 filter-app">
+              <div class="portfolio-item">
+                <img src="assets/img/jabiloption/journey.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h3><a href="assets/img/animasi/semv.gif" data-gall="portfolioGallery" class="venobox"
+                      title="JOURNEY">GO</a></h3>
+                </div>
               </div>
             </div>
-          </div></a>
+          </a>
 
           <a href="#">
-          <div class="col-lg-3 col-md-6 filter-web">
-            <div class="portfolio-item">
-              <img src="assets/img/jabiloption/team.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h3><a href="assets/img/animasi/javil.gif" data-gall="portfolioGallery" class="venobox" title="Collaborative Team">GO</a></h3>
+            <div class="col-lg-3 col-md-6 filter-web">
+              <div class="portfolio-item">
+                <img src="assets/img/jabiloption/team.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h3><a href="assets/img/animasi/javil.gif" data-gall="portfolioGallery" class="venobox"
+                      title="Collaborative Team">GO</a></h3>
                 </div>
+              </div>
             </div>
-          </div></a>
+          </a>
 
           <a href="#">
-          <div class="col-lg-3 col-md-6 filter-app">
-            <div class="portfolio-item">
-              <img src="assets/img/jabiloption/col-jour.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h3><a href="assets/img/video/vs11.mp4" data-gall="portfolioGallery" class="venobox" title="Collaborative Journey">GO</a></h3>
+            <div class="col-lg-3 col-md-6 filter-app">
+              <div class="portfolio-item">
+                <img src="assets/img/jabiloption/col-jour.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h3><a href="assets/img/video/vs11.mp4" data-gall="portfolioGallery" class="venobox"
+                      title="Collaborative Journey">GO</a></h3>
+                </div>
+              </div>
             </div>
-            </div>
-          </div></a>
+          </a>
 
           <a href="topik/topikDetail.php?id=1">
-          <div class="col-lg-3 col-md-6 filter-web">
-            <div class="portfolio-item">
-              <img src="assets/img/jabiloption/col-sol.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h3><a href="topik/topikDetail.php?id=2" data-gall="portfolioGallery" class="venobox" title="Collaborative Solution"></a></h3>
+            <div class="col-lg-3 col-md-6 filter-web">
+              <div class="portfolio-item">
+                <img src="assets/img/jabiloption/col-sol.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h3><a href="topik/topikDetail.php?id=2" data-gall="portfolioGallery" class="venobox"
+                      title="Collaborative Solution"></a></h3>
                 </div>
+              </div>
             </div>
-          </div></a>
+          </a>
 
         </div>
 
       </div>
     </section>
-  
+
 
   </main><!-- End #main -->
 
