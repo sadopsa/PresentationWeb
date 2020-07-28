@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio - Moderna Bootstrap Template</title>
+  <title>Judul</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -45,12 +45,13 @@
   <!-- End Header -->
 
   <main id="main" style="background-color:#57ca93">
-    <section class="portfolio">
+    
+  <section class="portfolio">
       <div class="container">
 
         <div class="row">
           <div class="col-lg-12">
-
+          
           </div>
         </div>
 
@@ -84,7 +85,7 @@
               <div class="portfolio-item">
                 <img src="assets/img/jabiloption/col-jour.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h3><a href="assets/img/video/vs11.mp4" data-gall="portfolioGallery" class="venobox"
+                  <h3><a href="assets/video/vs11.mp4" data-gall="portfolioGallery" class="venobox"
                       title="Collaborative Journey">GO</a></h3>
                 </div>
               </div>

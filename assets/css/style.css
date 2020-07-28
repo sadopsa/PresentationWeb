@@ -27,7 +27,7 @@ mod/**
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: absolute;
 }
 #main .bg-img{
 background-image:url('/assets/img/hero-bg.jpg');
@@ -631,7 +631,6 @@ section {
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
-  padding: 15px 0;
   background-color: #f3f8fa;
   min-height: 40px;
 }
@@ -639,6 +638,7 @@ section {
 .breadcrumbs h2 {
   font-size: 28px;
   font-weight: 300;
+  padding: 0;
 }
 
 .breadcrumbs ol {
@@ -1342,6 +1342,25 @@ section {
 --------------------------------------------------------------*/
 .portfolio {
   padding-bottom: 60px;
+}
+/*portfolio .row{
+  padding: 20px;
+  background-color: #ffffff;
+}
+.portfolio .container{
+  box-shadow: 0 5px 25px 0 rgba(8, 180, 114, 0.651);
+  background: #000000;
+}*/
+.portfolio .play-btn {
+  width: 94px;
+  height: 94px;
+  background: radial-gradient(#3b9b3f 50%, rgba(104, 196, 142, 0.4) 52%);
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: calc(50% - 47px);
+  top: calc(50% - 47px);
+  overflow: hidden;
 }
 
 .portfolio #portfolio-flters {
