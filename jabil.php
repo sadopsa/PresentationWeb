@@ -44,7 +44,7 @@
   <?php include("partial/header.php");?>
   <!-- End Header -->
 
-  <main id="main" style="background-color:#000000">
+  <main id="main" style="background-color:#57ca93">
     
   <section class="portfolio">
       <div class="container">
@@ -59,7 +59,7 @@
           <a href="#">
             <div class="col-lg-3 col-md-6 filter-app">
               <div class="portfolio-item">
-                <img src="assets/img/jabiloption/journey.png" class="img-fluid" alt="">
+                <img src="assets/img/bahan/journey-bl.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h3><a href="assets/img/animasi/semv.gif" data-gall="portfolioGallery" class="venobox"
                       title="JOURNEY">GO</a></h3>
@@ -71,7 +71,7 @@
           <a href="#">
             <div class="col-lg-3 col-md-6 filter-web">
               <div class="portfolio-item">
-                <img src="assets/img/jabiloption/team.png" class="img-fluid" alt="">
+                <img src="assets/img/bahan/team-bl.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h3><a href="assets/img/animasi/javil.gif" data-gall="portfolioGallery" class="venobox"
                       title="Collaborative Team">GO</a></h3>
@@ -83,7 +83,7 @@
           <a href="#">
             <div class="col-lg-3 col-md-6 filter-app">
               <div class="portfolio-item">
-                <img src="assets/img/jabiloption/col-jour.png" class="img-fluid" alt="">
+                <img src="assets/img/bahan/col-jour-bl.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h3><a href="assets/video/vs11.mp4" data-gall="portfolioGallery" class="venobox"
                       title="Collaborative Journey">GO</a></h3>
@@ -95,7 +95,7 @@
           <a href="topik/topikDetail.php?id=1">
             <div class="col-lg-3 col-md-6 filter-web">
               <div class="portfolio-item">
-                <img src="assets/img/jabiloption/col-sol.png" class="img-fluid" alt="">
+                <img src="assets/img/bahan/col-sol-bl.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h3><a href="topik/topikDetail.php?id=2" data-gall="portfolioGallery" class="venobox"
                       title="Collaborative Solution"></a></h3>
