@@ -43,12 +43,6 @@ background-position:center;
  color:#57ca93;
  font-weight: bold;
 }
-.tepi-sikit{
-  text-align: center;
-  margin: 0;
-  padding: 0;
-
-}
 .kasih-jarak{
   padding: 1%;
 }
@@ -776,6 +770,8 @@ section {
 .why-us .container {
   box-shadow: 0 5px 25px 0 rgba(8, 180, 114, 0.651);
   background: #fff;
+  border-radius: 5px;
+  padding: 5%px;
 }
 .why-us .containers {
   box-shadow: 0 5px 25px 0 rgba(8, 180, 114, 0.651);
@@ -783,6 +779,7 @@ section {
   margin: 2%;
   padding: 2%;
   margin-top:0;
+  border-radius: 5px;
 }
 
 .why-us .icon-box{
@@ -1390,7 +1387,7 @@ section {
 }
 
 .portfolio .portfolio-item {
-  background: #1e4356;
+  background: #ffffff00;
   overflow: hidden;
   min-height: 200px;
   position: relative;

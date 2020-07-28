@@ -44,7 +44,7 @@
   <?php include("partial/header.php");?>
   <!-- End Header -->
 
-  <main id="main" style="background-color:#57ca93">
+  <main id="main" style="background-color:#000000">
     
   <section class="portfolio">
       <div class="container">

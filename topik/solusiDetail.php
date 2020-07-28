@@ -73,7 +73,7 @@ $kolom = 3;
 
     <!-- ======= Why Us Section ======= -->
     <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
-      <h1 class="tepi-sikit" style="text-align:left; padding-left: 2%; text-transform:uppercase;">
+      <h1  style="text-align:center; padding:0;text-transform:uppercase;">
         <?php echo $data['judul']; ?></h1>
       <div class="containers">
 

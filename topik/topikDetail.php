@@ -68,8 +68,8 @@ $kolom = 3;
   
     <!-- ======= Why Us Section ======= -->
     <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">  
-    <div class="containers" >
-    <h1 class="tepi-sikit" style="text-align:center; margin:0; padding:0;"><?php echo $data['judul']; ?></h1>
+    <div class="container" >
+    <h1 class="tepi-sikit" style="text-align:center; margin:0; padding:2%;"><?php echo $data['judul']; ?></h1>
         <div class="row">
         
           <div class="col-lg-4 video-box d-flex flex-column justify-content-center p-5">
