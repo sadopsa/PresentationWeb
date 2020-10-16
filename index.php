@@ -6,6 +6,7 @@ $query = mysqli_query($connect, "SELECT * FROM topik");
 
 <!DOCTYPE html>
 <html lang="en">
+<!---->
 
 <head>
   <meta charset="utf-8">
